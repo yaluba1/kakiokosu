@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+    <meta name="theme-color" content="#0f172a" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Kakiokoshi" />
+    <title>書き起こし - 音声文字起こし</title>
+    <script>
+      (function() {
+        var titles = {
+          ja: '書き起こし - 音声文字起こし',
+          en: 'Kakiokoshi - Audio transcription',
+          es: 'Kakiokoshi - Transcripción de audio',
+          fr: 'Kakiokoshi - Transcription audio',
+          de: 'Kakiokoshi - Audiotranskription',
+          pt: 'Kakiokoshi - Transcrição de áudio',
+          it: 'Kakiokoshi - Trascrizione audio',
+          ca: "Kakiokoshi - Transcripció d'àudio",
+          ar: 'كاكيوكوشي - نسخ صوتي',
+          he: 'קאקיוקושי - תמלול שמע'
+        };
+        try {
+          var saved = localStorage.getItem('kakiokoshi_language') || localStorage.getItem('kakiokosu_language');
+          var lang = (saved && saved !== 'guess' && titles[saved]) ? saved : (navigator.language ? navigator.language.split('-')[0].toLowerCase() : 'ja');
+          if (titles[lang]) {
+            document.title = titles[lang];
+            document.documentElement.lang = lang;
+            if (lang === 'ar' || lang === 'he') {
+              document.documentElement.dir = 'rtl';
+            }
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-slate-950 text-slate-100 min-h-screen antialiased select-none selection:bg-sky-500 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

@@ -1,0 +1,30 @@
+/// <reference types="vite/client" />
+
+declare module 'lucide-react' {
+  export const Ear: any;
+  export const Settings: any;
+  export const LogOut: any;
+  export const ZoomIn: any;
+  export const ZoomOut: any;
+  export const Volume2: any;
+  export const VolumeX: any;
+  export const X: any;
+  export const Check: any;
+  export const RotateCcw: any;
+  export const Mail: any;
+  export const Lock: any;
+  export const Eye: any;
+  export const EyeOff: any;
+  export const AlertCircle: any;
+  export const CheckCircle2: any;
+  export const Globe: any;
+  export const Languages: any;
+  export const Fingerprint: any;
+  export const Mic: any;
+  export const Trash2: any;
+  export const RefreshCw: any;
+  export const AlertTriangle: any;
+  export const Sparkles: any;
+  export const Copy: any;
+  export const Send: any;
+}

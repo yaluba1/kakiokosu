@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>書き起こし - 履歴リーダー</title>
+    <script>
+      (function() {
+        var titles = {
+          ja: '書き起こし - 履歴リーダー',
+          en: 'Kakiokoshi - Transcript Reader',
+          es: 'Kakiokoshi - Lector de transcripciones',
+          fr: 'Kakiokoshi - Lecteur de transcriptions',
+          de: 'Kakiokoshi - Transkript-Reader',
+          pt: 'Kakiokoshi - Leitor de transcrições',
+          it: 'Kakiokoshi - Lettore di trascrizioni',
+          ca: 'Kakiokoshi - Lector de transcripcions',
+          ar: 'كاكيوكوشي - قارئ النسخ',
+          he: 'קאקיוקושי - קורא תמלולים'
+        };
+        try {
+          var saved = localStorage.getItem('kakiokoshi_language') || localStorage.getItem('kakiokosu_language');
+          var lang = (saved && saved !== 'guess' && titles[saved]) ? saved : (navigator.language ? navigator.language.split('-')[0].toLowerCase() : 'ja');
+          if (titles[lang]) {
+            document.title = titles[lang];
+            document.documentElement.lang = lang;
+            if (lang === 'ar' || lang === 'he') {
+              document.documentElement.dir = 'rtl';
+            }
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-slate-900 text-slate-100 min-h-screen antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

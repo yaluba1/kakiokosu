@@ -1,0 +1,31 @@
+/// <reference types="vite/client" />
+
+declare module 'lucide-react' {
+  export const BookOpen: any;
+  export const Shield: any;
+  export const User: any;
+  export const LogOut: any;
+  export const Search: any;
+  export const Calendar: any;
+  export const Clock: any;
+  export const MessageSquare: any;
+  export const ArrowLeft: any;
+  export const Download: any;
+  export const Eye: any;
+  export const EyeOff: any;
+  export const Filter: any;
+  export const VolumeX: any;
+  export const RefreshCw: any;
+  export const Settings: any;
+  export const X: any;
+  export const Check: any;
+  export const Mail: any;
+  export const Lock: any;
+  export const AlertCircle: any;
+  export const CheckCircle2: any;
+  export const Globe: any;
+  export const Languages: any;
+  export const Sparkles: any;
+  export const Copy: any;
+  export const Send: any;
+}
