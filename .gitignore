@@ -147,3 +147,14 @@ vite.config.ts.timestamp-*
 
 # Turbo Repo
 .turbo
+
+# Own
+prompts/
+web/
+
+# Cloudflare Wrangler
+.wrangler/
+.dev.vars
+!.dev.vars.example
+wrangler.toml
+check-d1.mjs
