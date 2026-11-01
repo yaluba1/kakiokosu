@@ -1,0 +1,7 @@
+# Robots.txt for Kakiokoshi History Reader (https://kakiokoshi-reader.yaluba.org)
+User-agent: *
+Allow: /
+
+# Landing website & sitemap
+# See https://kakiokoshi.yaluba.org/sitemap.xml
+

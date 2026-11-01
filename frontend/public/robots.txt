@@ -1,0 +1,7 @@
+# Robots.txt for Kakiokoshi PWA (https://kakiokoshi-app.yaluba.org)
+User-agent: *
+Allow: /
+
+# Landing website & sitemap
+# See https://kakiokoshi.yaluba.org/sitemap.xml
+

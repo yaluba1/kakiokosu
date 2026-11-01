@@ -147,7 +147,7 @@ npm run dev:reader
    # Landing Web (https://kakiokoshi.yaluba.org)
    npx wrangler pages deploy web/dist --project-name kakiokosu-web
    ```
-3. In the **Firebase Console** (**Authentication > Settings > Authorized domains**), add your custom and Cloudflare Pages domains (`kakiokoshi-app.yaluba.org`, `kakiokoshi-reader.yaluba.org`, `kakiokosu-frontend.pages.dev`, and `kakiokosu-reader.pages.dev`).
+3. In the **Firebase Console** (**Authentication > Settings > Authorized domains**), add your custom and Cloudflare Pages domains (`kakiokoshi-app.yaluba.org`, `kakiokoshi-reader.yaluba.org`, `kakiokosu-frontend.yaluba.org`).
 
 ---
 
